@@ -8,6 +8,14 @@ services:
     working_dir: /docker/express
     volumes:
       - ./:/docker
+  vanilla:
+    container_name: local_node_vanilla
+    build: ./docker/vanilla
+    ports:
+      - "8080:8080"
+    working_dir: /docker/vanilla
+    volumes:
+      - ./:/docker
 
 
 
