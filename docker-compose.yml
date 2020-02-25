@@ -1,0 +1,13 @@
+version: '3'
+services:
+  express:
+    container_name: local_node_express
+    build: ./docker/express
+    ports:
+      - "3000:3000"
+    working_dir: /docker/express
+    volumes:
+      - ./:/docker
+
+
+
